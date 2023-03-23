@@ -1,0 +1,118 @@
+:root{
+    --h1-font-family :'Krona One', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Arimo', sans-serif;
+}
+body h1{
+    font-family: var(--h1-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+body{
+    background: #bdbdbd;
+}
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    
+ }
+ nav .nav-logo{
+    padding-top: 2rem;
+    padding-left: 5rem;
+ }
+ nav .nav-logo img{
+    width: 13rem;
+ }
+ nav .nav-heading{
+    padding-top: 3rem;
+    padding-right: 2rem;
+ }
+ section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 11rem;
+    padding: 5rem;
+    margin-top: 7rem;
+ }
+ section .about_naruto{
+    padding-left:3rem;
+
+ }
+ .about_naruto h1{
+    font-size: 4rem;
+}
+.about_naruto p{
+    padding-top: 2rem;
+    max-width: 65rem;
+    font-size: 1.4rem;
+}
+.about_naruto .btn{
+    padding-top: 3rem;
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    justify-content: start;
+
+}
+.about_naruto .btn a{
+    background-color: rgb(92, 24, 24);
+    height: 3rem;
+    width: 9rem;
+    color: white;
+    border-radius: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    transition: all 400ms ease;
+}
+.about_naruto .btn a:hover{
+    transform: scale(1.2);
+}
+.image_narto{
+    padding-left: 5rem;
+}
+.image_narto img{
+    width: 25rem;
+    transition: all 400ms ease;
+
+}
+@media screen and (max-width:1209px){
+    
+    section{
+        gap: 0;
+        padding: 3rem;
+    }
+    
+}
+@media screen and (max-width:965px){
+    
+    section{
+        gap: 0;
+        padding: 1rem;
+    }
+    nav h1{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:886px){
+    
+    section{
+        grid-template-columns: 1fr;
+        
+      
+    }
+    .image_narto{
+        order: 1;
+    }
+  
+    
+}
